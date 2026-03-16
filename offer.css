@@ -1,0 +1,111 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  padding-top: 12vh;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  height: 12vh;
+  background-color: rgb(126, 209, 236);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  font-size: larger;
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+}
+
+.nav-item a:hover {
+  color: blue;
+  transform: translatey(-5px);
+  background-color: rgb(119, 196, 227);
+  border-radius: 20px;
+}
+
+.container {
+  background: linear-gradient(135deg, #92bdf1 0%, #35b5e7aa 100%)
+}
+
+.specials-wrapper {
+  padding: 50px 80px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+
+.special-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.add-btn {
+  width: 200px;
+  background-color: rgb(86, 189, 230) !important;
+  border-radius: 20px !important;
+}
+
+
+.add-btn:hover {
+  background-color: rgb(100, 190, 220) !important;
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 250px;
+  width: 270px;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: orange;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.container1{
+  background-color:aliceblue !important;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.container-fluid {
+  background-color: rgb(126, 209, 236);
+}
+
+footer p,
+footer li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}

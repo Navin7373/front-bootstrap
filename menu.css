@@ -1,0 +1,179 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  padding-top: 12vh;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  height: 12vh;
+  background-color: rgb(126, 209, 236);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  font-size: larger;
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+}
+
+.nav-item a:hover {
+  color: blue;
+  transform: translatey(-5px);
+  background-color: rgb(119, 196, 227);
+  border-radius: 20px;
+}
+
+.layout {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 30px;
+  width: calc(100% - 260px);
+}
+
+.menu1 {
+  width: 260px;
+  background-color: #f2f2f2;
+  padding: 30px 20px;
+  position: fixed;
+  top: 12vh;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.menu1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu1 li {
+  margin-bottom: 10px;
+}
+
+.menu1 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.menu1 a:hover {
+  color: #0d6efd;
+}
+
+.main-content h2 {
+  margin-top: 20px;
+  color: orangered;
+}
+
+.main-content p {
+  font-size: large;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.desc {
+  min-height: 44px;
+}
+
+.card {
+  margin-top: 50px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+
+
+.card:hover {
+  transform: scale3d(1.05, 1.05, 1.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.mt-auto {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+
+}
+
+.add-btn {
+  width: 200px;
+  background-color: rgb(86, 189, 230) !important;
+  border-radius: 20px !important;
+}
+
+
+.add-btn:hover {
+  background-color: rgb(100, 190, 220) !important;
+  transform: scale(1.05);
+}
+
+.main-content img {
+  height: 250px;
+  width: 270px;
+}
+
+.container-fluid {
+  background-color: rgb(126, 209, 236);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer p {
+  font-size: large;
+}
+
+footer li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+h1,
+h2 {
+  letter-spacing: 0.5px;
+}
+
+/* Logo */
+.logo2 {
+  height: 70px;
+  width: auto;
+}
+
+.list-unstyled li {
+  font-size: large;
+}

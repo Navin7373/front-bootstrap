@@ -1,0 +1,59 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  padding-top: 12vh;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  height: 12vh;
+  background-color: rgb(126, 209, 236);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  font-size: larger;
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+}
+
+.nav-item a:hover {
+  color: blue;
+  transform: translatey(-5px);
+  background-color: rgb(119, 196, 227);
+  border-radius: 20px;
+}
+
+.container {
+  background: linear-gradient(135deg, #92bdf1 0%, #35b5e7aa 100%)
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+}
+
+.container-fluid {
+  background-color: rgb(126, 209, 236);
+}
+
+footer p,
+footer li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}

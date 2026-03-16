@@ -1,0 +1,71 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    padding-top: 12vh;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    height: 12vh;
+    background-color: rgb(126, 209, 236);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    font-size: larger;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+    width: auto;
+}
+
+.nav-item a:hover {
+    color: blue;
+    transform: translatey(-5px);
+    background-color: rgb(119, 196, 227);
+    border-radius: 20px;
+}
+
+
+.upi-box {
+    max-width: 450px;
+    margin-top: 50px;
+}
+
+.pay-btn {
+    background: rgb(126, 209, 236);
+    color: white;
+    border-radius: 25px;
+}
+
+/* OTP */
+.otp-box {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    width: 280px;
+}
+
+/* Processing */
+.process-box {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}

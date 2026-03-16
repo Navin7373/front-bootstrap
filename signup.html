@@ -1,0 +1,152 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceInn-signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" height="80px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#juiceOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="juiceOffcanvas">
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto fw-bold">
+
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">OFFERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="special.html">SPECIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewcart.html">VIEW CART</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+        <div class="card signup-card p-4 shadow">
+
+            <h3 class="text-center fw-bold mb-3">Create Account</h3>
+
+            <form>
+
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control name" placeholder="Enter your name">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control email" placeholder="Enter email">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control pass" placeholder="Create password">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control cpass" placeholder="Re-enter password">
+                </div>
+
+                <button class="btn signup-btn w-100">
+                    Signup
+                </button>
+
+                <p id="msg" class="text-center mt-2 text-danger fw-bold  "></p>
+
+
+                <div class="text-center mt-3">
+                    Already have account?
+                    <a href="login.html" class="text-decoration-none fw-bold">
+                        Login
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+
+        let form = document.getElementsByTagName("form")[0];
+        let msg = document.getElementById("msg");
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            let name = document.getElementsByClassName("name")[0].value;
+            let email = document.getElementsByClassName("email")[0].value;
+            let phone = document.getElementsByClassName("phone")[0].value;
+            let pass = document.getElementsByClassName("pass")[0].value;
+            let cpass = document.getElementsByClassName("cpass")[0].value;
+
+            if (name === "") {
+                msg.textContent = "Enter your name";
+            }
+
+            else if (email === "") {
+                msg.textContent = "Enter email";
+            }
+
+            else if (phone.length != 10) {
+                msg.textContent = "Phone must be 10 digits";
+            }
+
+            else if (pass.length < 6) {
+                msg.textContent = "Password minimum 6 characters";
+            }
+
+            else if (pass !== cpass) {
+                msg.textContent = "Password not matching";
+            }
+
+            else {
+
+                msg.style.color = "green";
+                msg.textContent = "Account created ";
+
+                window.location.href = "login.html";
+
+            }
+
+        });
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

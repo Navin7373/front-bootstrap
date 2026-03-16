@@ -1,0 +1,393 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceInn-Special</title>
+    <link rel="stylesheet" href="special.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" height="80px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#juiceOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="juiceOffcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" src="menu.html"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto fw-bold">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">OFFERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewcart.html">VIEW CART</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container text-center py-5 mt-4 rounded-5 " data-aos="fade-right">
+        <h1 class="display-5 fw-bold ">Juice Inn Specials 🍹</h1>
+        <p class="lead my-3">
+            Customer Favorites & Combo
+        </p>
+    </div>
+    <div class="specials-wrapper mt-3">
+        <!-- specials-->
+
+        <div class=" special-row d-flex flex-wrap justify-content-center mt-4" >
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/milkshake/chocomilk.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Chocolate Milkshake</h3>
+                    <p class="card-text fw-bold fs-5"> Decadent chocolate milkshake with cocoa goodness
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹150</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/burger/crispychickenburger.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Crispy Chicken Burger</h3>
+                    <p class="desc card-text fw-bold fs-5"> Crunchy crispy chicken with a soft bun
+                    </p>
+                    <div class="price text-primary fw-bold fs-4 ">₹190</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold  " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/crispychicken/chickentenders.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Chicken Tenders</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Tender and crispy, perfect for dipping
+                    </p>
+                    <div class="price text-primary fw-bold fs-4 ">₹190</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/combo.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Veg Pizza + Apple Juice</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Seasonal special
+                    </p>
+                    <div class="price text-primary fw-bold fs-4 ">₹230</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/frenchfries/belgianfries.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Belgian Fries</h3>
+                    <p class=" desc card-text fw-bold fs-5 ">Thick-cut Belgian fries, extra crispy
+                    </p>
+                    <div class="price text-primary fw-bold fs-4">₹150</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/chickenroll/chickenroll.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Chicken Roll</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Juicy chicken wrapped in soft goodness
+                    </p>
+                    <div class="price text-primary fw-bold fs-4 ">₹190</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold  " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/sandwich/vegsandwich.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Veg Sandwich</h3>
+                    <p class="desc card-text fw-bold fs-5"> Fresh veggies and spices sandwiched with love
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹140</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="menu-img/freshjuice/orangejuice.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Orange Juice</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Citrusy orange juice, packed with vitamin C
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹140</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold" onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="special-img/pasta.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">White Sauce pasta</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Italian Style
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹210</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold" onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="special-img/noodles.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Veg Noodles</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Spicy and Tasty noodles for Veggie
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹130</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold" onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="special-img/chocolate.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Chocolate Waffle</h3>
+                    <p class=" desc card-text fw-bold fs-5"> Sweet Delight and more creamy
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹150</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold" onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="zoom-in-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <img src="special-img/friedrice.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Veg Fried Rice </h3>
+                    <p class=" desc card-text fw-bold fs-5"> Classic Veg Fried Rice especial for veggie
+                    </p>
+                    <div class="price text-primary fw-bold fs-5 ">₹130</div>
+
+                    <div class="mt-auto ">
+                        <a class="  btn add-btn fw-bold" onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="pt-4">
+        <div class="container-fluid fs-4 ">
+
+            <div class="row d-flex justify-content-between pt-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-md-3 mb-4 text-center text-md-start">
+                    <img src="logo2.png" alt="Juice Inn" class="img-fluid mb-2 logo2" style="max-width:150px;">
+                    <p class="small">
+                        Fresh, delicious and affordable juices, shakes & snacks made with quality ingredients.
+                    </p>
+                </div>
+
+                <!-- Top Categories -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Top Categories</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#freshjuice" class="text-decoration-none fs-5">Fresh Juices</a></li>
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Milkshakes</a></li>
+                        <li><a href="menu.html#burger" class=" text-decoration-none fs-5">Snacks</a></li>
+                        <li><a href="special.html" class=" text-decoration-none fs-5">Combos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Best Sellers</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Mango Shake</a></li>
+                        <li><a href="menu.html#milkshake" class=" text-decoration-none fs-5">Oreo Milkshakes</a></li>
+                        <li><a href="menu.html#frenchfries" class=" text-decoration-none fs-5">Peri Peri Fries</a></li>
+                        <li><a href="menu.html#chickenroll" class=" text-decoration-none fs-5">Chicken Roll</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Info</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="about.html" class="  text-decoration-none fs-5">About Us</a></li>
+                        <li><a href="contactus.html" class=" text-decoration-none fs-5">Contact US</a></li>
+                        <li><a href="quality.html" class=" text-decoration-none fs-5">Quality</a></li>
+                        <li><a href="review.html" class=" text-decoration-none fs-5">Reviews</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Social -->
+            <div class="text-center my-3">
+                <a href="https://www.facebook.com/" class="text-primary  fs-5 me-3 "><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="fs-5 me-3" style="color:#E4405F;"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="text-primary fs-5"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <hr class="border-dark">
+
+            <!-- Bottom -->
+            <div class="text-center py-3">
+                <small>© 2026 JuiceINN. All rights reserved.</small>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function handleclick(button) {
+            const card = button.closest('.card');
+            const name = card.querySelector('h3').textContent.trim();
+            const price = parseInt(card.querySelector('.price').textContent.replace('₹', ''));
+            const image = card.querySelector('img').getAttribute('src');
+            const description = card.querySelector('.card-text').textContent.trim();
+
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            const item = cart.find(i => i.name === name);
+
+            if (item) item.quantity++;
+            else cart.push({ name, price, image, description, quantity: 1 });
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert("Item added to cart!");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

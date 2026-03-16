@@ -1,0 +1,363 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceINN-Offer</title>
+
+    <link rel="stylesheet" href="offer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" height="80px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#juiceOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="juiceOffcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" src="menu.html"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto fw-bold">
+
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="special.html">SPECIAL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewcart.html">VIEW CART</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center mt-5" data-aos="fade-up">
+        <h1 class="fw-bold">January 2026 Offer 🌟</h1>
+    </div>
+    <div class="d-flex justify-content-center mt-4" data-aos="fade-up">
+        <p class="fw-bold fs-3">Exclusive Items Available Only This Month!</p>
+    </div>
+
+    <div class="container text-center py-5 mt-4 rounded-5 " data-aos="fade-up">
+        <h1 class="display-5 fw-bold text-light">🌴 Tropical Paradise Collection 🌴</h1>
+        <p class="lead my-5 fw-bold">
+            Experience the taste of the tropics with our January exclusive items!
+        </p>
+    </div>
+
+    <div class="specials-wrapper mt-3">
+
+
+        <div class=" special-row d-flex flex-wrap justify-content-center mt-4">
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/coconut.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Coconut Dream Shake</h3>
+                    <p class="card-text fw-bold fs-5">Creamy coconut milkshake with tropical fruit toppings
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹160</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/tropical.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Tropical Paradise Juice</h3>
+                    <p class="card-text fw-bold fs-5">Blend of pineapple, mango, and passion fruit
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹150</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/smoothie.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Smoothie Bowl</h3>
+                    <p class="card-text fw-bold fs-5">Acai smoothie bowl topped with fresh fruits and granola
+
+
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹210</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/mango.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Mango Tango Delight</h3>
+                    <p class="card-text fw-bold fs-5">Mango shake with chili-lime rim and tajin seasoning
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹150</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/mint.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Pineapple Mint Cooler</h3>
+                    <p class="card-text fw-bold fs-5">Refreshing pineapple juice with fresh mint leaves
+
+
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹150</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card me-5" style="width: 20rem;" data-aos="fade-up">
+                <div class="d-flex justify-content-center pt-3 px-3">
+                    <span class="offer-badge ">JANUARY SPECIAL</span>
+                    <img src="offer-img/hawaiin.png" class="card-img img-fluid rounded" alt="juice">
+                </div>
+
+                <div class="card-body text-center d-flex flex-column">
+                    <h3 class="fw-bold">Hawaiian Burger</h3>
+                    <p class="card-text fw-bold fs-5">Veggie burger with grilled pineapple and teriyaki sauce
+                    </p>
+                    <div class="price text-primary fs-4 fw-bold ">₹210</div>
+
+                    <div class="mt-auto  ">
+                        <a class=" btn add-btn fw-bold " onclick="handleclick(this)">
+                            Add to cart <i class="fa-solid fa-cart-arrow-down ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="container1 my-3 pb-5 px-5 upcoming">
+
+        <!-- Title -->
+        <h2 class="text-center fw-bold mb-5 pt-3">UpComing Month's</h2>
+
+        <!-- Upcoming Months Cards -->
+        <div class="row g-4 mb-5">
+
+            <!-- February -->
+            <div class="col-12 col-md-4" data-aos="fade-right">
+                <div class="card h-100 text-center p-4 shadow-sm border-0 rounded-4">
+                    <div class="fs-1 mb-3">💝</div>
+                    <h5 class="fw-bold">February - Love Special</h5>
+                    <p class="mt-3">
+                        Get ready for Valentine's themed treats and romantic combos
+                    </p>
+                </div>
+            </div>
+
+            <!-- March -->
+            <div class="col-12 col-md-4" data-aos="fade-right">
+                <div class="card h-100 text-center p-4 shadow-sm border-0 rounded-4">
+                    <div class="fs-1 mb-3">🌸</div>
+                    <h5 class="fw-bold">March - Spring Fresh</h5>
+                    <p class="mt-3">
+                        Fresh spring flavors with floral and citrus notes
+                    </p>
+                </div>
+            </div>
+
+            <!-- April -->
+            <div class="col-12 col-md-4" data-aos="fade-right">
+                <div class="card h-100 text-center p-4 shadow-sm border-0 rounded-4">
+                    <div class="fs-1 mb-3">🌞</div>
+                    <h5 class="fw-bold">April - Summer Kickoff</h5>
+                    <p class="mt-3">
+                        Cool down with refreshing summer beverages
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Limited Time Offer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-center p-5 shadow-sm border-0 rounded-4" data-aos="fade-left  ">
+                    <h3 class="fw-bold mb-3">🎉 Limited Time Offer 🎉</h3>
+
+                    <p class="fs-5 fw-semibold mb-4">
+                        Buy any 2 January Specials and get <span class="text-success">15% OFF!</span>
+                    </p>
+
+                    <p class="fw-bold">
+                        Valid until January 31, 2026
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--footer-->
+
+    <footer class="pt-4">
+        <div class="container-fluid fs-4 ">
+
+            <div class="row d-flex justify-content-between pt-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-md-3 mb-4 text-center text-md-start">
+                    <img src="logo2.png" alt="Juice Inn" class="img-fluid mb-2 logo2" style="max-width:150px;">
+                    <p class="small">
+                        Fresh, delicious and affordable juices, shakes & snacks made with quality ingredients.
+                    </p>
+                </div>
+
+                <!-- Top Categories -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Top Categories</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#freshjuice" class="text-decoration-none fs-5">Fresh Juices</a></li>
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Milkshakes</a></li>
+                        <li><a href="menu.html#burger" class=" text-decoration-none fs-5">Snacks</a></li>
+                        <li><a href="special.html" class=" text-decoration-none fs-5">Combos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Best Sellers</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Mango Shake</a></li>
+                        <li><a href="menu.html#milkshake" class=" text-decoration-none fs-5">Oreo Milkshakes</a></li>
+                        <li><a href="menu.html#frenchfries" class=" text-decoration-none fs-5">Peri Peri Fries</a></li>
+                        <li><a href="menu.html#chickenroll" class=" text-decoration-none fs-5">Chicken Roll</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Info</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="about.html" class="  text-decoration-none fs-5">About Us</a></li>
+                        <li><a href="contactus.html" class=" text-decoration-none fs-5">Contact US</a></li>
+                        <li><a href="quality.html" class=" text-decoration-none fs-5">Quality</a></li>
+                        <li><a href="review.html" class=" text-decoration-none fs-5">Reviews</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Social -->
+            <div class="text-center my-3">
+                <a href="https://www.facebook.com/" class="text-primary  fs-5 me-3 "><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="fs-5 me-3" style="color:#E4405F;"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="text-primary fs-5"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <hr class="border-dark">
+
+            <!-- Bottom -->
+            <div class="text-center py-3">
+                <small>© 2026 JuiceINN. All rights reserved.</small>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function handleclick(button) {
+            const card = button.closest('.card');
+            const name = card.querySelector('h3').textContent.trim();
+            const price = parseInt(card.querySelector('.price').textContent.replace('₹', ''));
+            const image = card.querySelector('img').getAttribute('src');
+            const description = card.querySelector('.card-text').textContent.trim();
+
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            const item = cart.find(i => i.name === name);
+
+            if (item) item.quantity++;
+            else cart.push({ name, price, image, description, quantity: 1 });
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert("Item added to cart!");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

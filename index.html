@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceINN-Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" height="80px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#juiceOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="juiceOffcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" src="menu.html"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto fw-bold ">
+
+                        <li class="nav-item"><a class="nav-link" href="special.html">SPECIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">OFFERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewcart.html">VIEW CART</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <section class="hero-section position-relative">
+
+        <!-- Floating Icons -->
+        <span class="floating-icon icon-1">🧃</span>
+        <span class="floating-icon icon-2">🍔</span>
+        <span class="floating-icon icon-3">🍕</span>
+        <span class="floating-icon icon-4">🍹</span>
+
+
+        <section class="container-fluid1 p-0 mt-1 pt-4">
+            <div class="hero-img-wrapper">
+                <a href="menu.html">
+                    <img src="hero-banner.png" class="img-fluid w-100 hero-img"
+                        style="max-height:550px; object-fit:cover;">
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!--MARQUEE -->
+    <section class="container-fluid text-white py-2 fs-4    ">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            🌿 100% Natural Ingredients &nbsp; • &nbsp;
+            🚚 Fast Service &nbsp; • &nbsp;
+            💚 No Preservatives &nbsp; • &nbsp;
+            ⭐ 4.8 Rated by Customers &nbsp; • &nbsp;
+            🥤 Freshly Prepared Every Day
+        </marquee>
+    </section>
+
+
+
+
+    <!--popular-->
+
+    <div class="text-center mt-5">
+        <h1>OUR POPULAR CATEGORIES</h1>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center mt-5">
+        <div class="card me-5" style="width: 18rem;" data-aos="fade-up">
+            <div class="d-flex justify-content-center p-3">
+                <img src="menu-img/freshjuice/orangejuice.png" class="img-fluid rounded" alt="juice"
+                    style="max-height:220px;">
+            </div>
+
+            <div class="card-body text-center">
+                <h3 class="fw-bold">Fresh Juice's</h3>
+                <p class="card-text fw-bold">100% Natural and freshly squeezed juices made from premium fruits.</p>
+                <a href="menu.html#freshjuice" class="btn btn-primary">Explore Juices</a>
+            </div>
+
+        </div>
+        <div class="card me-5" style="width: 18rem;" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="d-flex justify-content-center p-3">
+                <img src="menu-img/milkshake/chocomilk.png" class="img-fluid rounded" alt="milkshake"
+                    style="max-height:220px;">
+            </div>
+
+            <div class="card-body text-center">
+                <h3 class="fw-bold">MilkShake's</h3>
+                <p class="card-text fw-bold">Delicious milkshakes in various flavors to satisfy your cravings.</p>
+                <a href="menu.html#milkshake" class="btn btn-primary">Explore Milkshakes</a>
+            </div>
+
+        </div>
+
+        <div class="card me-5" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="d-flex justify-content-center p-3">
+                <img src="menu-img/crispychicken/popcornchicken.png" class="img-fluid rounded" alt="snacks"
+                    style="max-height:220px;">
+            </div>
+
+            <div class="card-body text-center">
+                <h3 class="fw-bold">Spicy Snack's</h3>
+                <p class="card-text fw-bold"> Crispy and tasty snacks perfect for any time of the day</p>
+                <a href="menu.html#crispychicken" class="btn btn-primary">Explore Snacks</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="text-center mt-4 fw-bold">
+        <h2>Why Choose Juice INN?</h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center mt-5">
+        <div class="card me-5" style="width: 18rem;" data-aos="zoom-in">
+            <div class="feature-icon fs-1 text-center mt-3  ">✨</div>
+            <div class="card-body text-center ">
+                <h3 class="text-center fw-bold">Fresh Ingredients</h3>
+                <p class="card-text fw-bold">We use only the freshest fruits and ingredients</p>
+            </div>
+        </div>
+        <div class="card me-5" style="width: 18rem;" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-icon fs-1 text-center mt-3  ">⚡</div>
+            <div class="card-body text-center ">
+                <h3 class="text-center fw-bold">Quick Service</h3>
+                <p class="card-text fw-bold">Fast preparation and delivery</p>
+            </div>
+        </div>
+        <div class="card me-5" style="width: 18rem;" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-icon fs-1 text-center mt-3  ">💰</div>
+            <div class="card-body text-center ">
+                <h3 class="text-center fw-bold">Great Price's</h3>
+                <p class="card-text fw-bold">Affordable prices and great combos</p>
+            </div>
+        </div>
+        <div class="card me-5" style="width: 18rem;" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-icon fs-1 text-center mt-3  ">❤️</div>
+            <div class="card-body text-center ">
+                <h3 class="text-center fw-bold">Made with Love</h3>
+                <p class="card-text fw-bold">Prepared with care and attention</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4 fw-bold">
+        <h2>Current Offer's</h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center align-items-stretch mt-5 gap-4">
+
+        <div class="card d-flex flex-column" style="width: 18rem;" data-aos="flip-left">
+            <div class=" ms-3 mt-3">
+                <span class="badge text-bg-warning rounded-pill px-3">COMBO DEAL</span>
+            </div>
+
+            <div class="fs-1 text-center mt-3">🎁</div>
+
+            <div class="card-body text-center d-flex flex-column">
+                <h3 class="fw-bold">Family pack</h3>
+                <p class="fw-bold">2 Large Juices + 2 Milkshakes + Fries</p>
+
+                <!-- push button to bottom -->
+                <div class="mt-auto">
+                    <a href="offer.html" class="btn btn-primary">Explore offers</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column" style="width: 18rem;" data-aos="flip-left" data-aos-delay="100">
+            <div class=" ms-3 mt-3">
+                <span class="badge text-bg-warning rounded-pill px-3">MONTHLY SPECIAL</span>
+            </div>
+
+            <div class="fs-1 text-center mt-3">🎁</div>
+
+            <div class="card-body text-center d-flex flex-column">
+                <h3 class="fw-bold">January Special</h3>
+                <p class="fw-bold">Tropical Paradise Smoothie Bowl</p>
+
+                <div class="mt-auto">
+                    <a href="special.html" class="btn btn-primary">Explore Juices</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOUNDER SECTION -->
+    <section class="container my-5 founder-section">
+        <div class="row align-items-center g-3  ">
+
+            <!-- Founder Image -->
+            <div class="col-md-5 text-center" data-aos="fade-right">
+                <img src="founder.png" class="img-fluid rounded-4 shadow-sm" alt="JuiceINN Founder"
+                    style="max-height:420px; object-fit:cover;">
+
+            </div>
+
+            <!-- Founder Content -->
+            <div class="col-md-7" data-aos="fade-left">
+                <h2 class="fw-bold mb-3" style="color:#7fb7d4;">
+                    We Serve Freshness That Your Body Understands
+                </h2>
+
+                <p class="fst-italic text-muted">
+                    Your body isn't artificial. So why should your drinks be?
+                </p>
+
+                <p>
+                    JuiceINN was started with a simple belief —
+                    <strong>fresh fruits, honest ingredients, and no shortcuts</strong>.
+                    Every juice and shake is prepared fresh, keeping health, taste,
+                    and hygiene in mind.
+                </p>
+
+                <p>
+                    Inspired by nature and powered by passion,
+                    JuiceINN focuses on affordable, nutritious beverages
+                    made for everyday life.
+                </p>
+
+                <a href="about.html" class="btn btn-primary mt-3 px-4">
+                    Explore Our Story
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="container my-2">
+        <h2 class="fw-bold mb-4">Moments at JuiceINN </h2>
+
+        <div class="scroll-wrapper ">
+
+            <div class="trend-card mt-2" data-aos="zoom-in-up">
+                <video muted loop playsinline>
+                    <source src="videos/juice-pour.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Freshly poured, always 💚</p>
+                </div>
+            </div>
+
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="100">
+                <video muted loop playsinline>
+                    <source src="videos/milkshake.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Creamy & thick shakes 😋</p>
+                </div>
+            </div>
+
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="200">
+                <video muted loop playsinline>
+                    <source src="videos/burger1.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Perfect crunch with every Bite 👌</p>
+                </div>
+            </div>
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="300">
+                <video muted loop playsinline>
+                    <source src="videos/bbqchicken.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Smoky, juicy BBQ chicken perfection 🔥</p>
+                </div>
+            </div>
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="400">
+                <video muted loop playsinline>
+                    <source src="videos/pizza.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Cheesy goodness in every slice 🍕</p>
+                </div>
+
+            </div>
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="500">
+                <video muted loop playsinline>
+                    <source src="videos/cheesesandwich.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Melted cheese, grilled to perfection 🧀</p>
+                </div>
+
+            </div>
+            <div class="trend-card mt-2" data-aos="zoom-in-up" data-aos-delay="600">
+                <video muted loop playsinline>
+                    <source src="videos/crispychicken.mp4" type="video/mp4">
+                </video>
+                <div class="trend-body">
+                    <p class="fst-italic">Crispy chicken, perfectly seasoned 🍗</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="testimonial-section ">
+        <div class="testimonial-wrapper ">
+
+            <!-- LEFT CONTENT -->
+            <div class="testimonial-intro" data-aos="fade-up">
+                <h2>What Our Customers Say</h2>
+                <p class="fs-5">
+                    We value your trust & feedback.
+                    All JuiceINN reviews are 100% genuine and based on real experiences.
+                </p>
+            </div>
+
+            <!-- RIGHT SLIDER -->
+            <div class="testimonial-slider" data-aos="fade-up">
+
+                <div class="testimonial-track" id="testimonialTrack">
+
+                    <div class="testimonial-card mt-3 ms-3">
+                        <div class="reviewer">
+                            <img src="reviews/arun.png" alt="Arun Kumar">
+                            <div>
+                                <h5>Arun Kumar</h5>
+                                <span>IT Professional</span>
+                            </div>
+                        </div>
+
+                        <p class="review-text">
+                            Fresh juices, amazing taste and very hygienic. Highly recommended!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card mt-3 ms-3">
+                        <div class="reviewer">
+                            <img src="reviews/priya.png" alt="Arun Kumar">
+                            <div>
+                                <h5>Priya</h5>
+                                <span>College Student</span>
+                            </div>
+                        </div>
+
+                        <p class="review-text">
+                            Milkshakes are super thick and creamy. Worth every rupee 😋
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card mt-3 ms-3">
+                        <div class="reviewer">
+                            <img src="reviews/ramya.png" alt="Arun Kumar">
+                            <div>
+                                <h5>Ramya</h5>
+                                <span>Bussiness Owner</span>
+                            </div>
+                        </div>
+
+                        <p class="review-text">
+                            Quick service and friendly staff. My go-to place after work.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card mt-3 ms-3">
+                        <div class="reviewer">
+                            <img src="reviews/sneha.png" alt="Arun Kumar">
+                            <div>
+                                <h5>Sneha</h5>
+                                <span>Fitness Enthusiast</span>
+                            </div>
+                        </div>
+
+                        <p class="review-text">
+                            Love their natural ingredients concept. Feels healthy & tasty
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card mt-3 ms-3">
+                        <div class="reviewer">
+                            <img src="reviews/dhivya.png" alt="Arun Kumar">
+                            <div>
+                                <h5>Dhivya</h5>
+                                <span>Engineer</span>
+                            </div>
+                        </div>
+
+                        <p class="review-text">
+                            Best juice shop in the area. Clean, fresh and affordable.
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <!-- CONTROLS -->
+                <div class="testimonial-controls">
+                    <button id="prevBtn">❮</button>
+                    <button id="nextBtn">❯</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--footer-->
+
+    <footer class="pt-4">
+        <div class="container-fluid fs-4 ">
+
+            <div class="row d-flex justify-content-between pt-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-md-3 mb-4 text-center text-md-start">
+                    <img src="logo2.png" alt="Juice Inn" class="img-fluid mb-2 logo2" style="max-width:150px;">
+                    <p class="small">
+                        Fresh, delicious and affordable juices, shakes & snacks made with quality ingredients.
+                    </p>
+                </div>
+
+                <!-- Top Categories -->
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Top Categories</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#freshjuice" class="text-decoration-none fs-5">Fresh Juices</a></li>
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Milkshakes</a></li>
+                        <li><a href="menu.html#burger" class=" text-decoration-none fs-5">Snacks</a></li>
+                        <li><a href="special.html" class=" text-decoration-none fs-5">Combos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Best Sellers</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="menu.html#milkshake" class="text-decoration-none fs-5">Mango Shake</a></li>
+                        <li><a href="menu.html#milkshake" class=" text-decoration-none fs-5">Oreo Milkshakes</a></li>
+                        <li><a href="menu.html#frenchfries" class=" text-decoration-none fs-5">Peri Peri Fries</a></li>
+                        <li><a href="menu.html#chickenroll" class=" text-decoration-none fs-5">Chicken Roll</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4 class="fw-bold">Info</h4>
+                    <ul class="list-unstyled small ">
+                        <li><a href="about.html" class="  text-decoration-none fs-5">About Us</a></li>
+                        <li><a href="contactus.html" class=" text-decoration-none fs-5">Contact US</a></li>
+                        <li><a href="quality.html" class=" text-decoration-none fs-5">Quality</a></li>
+                        <li><a href="review.html" class=" text-decoration-none fs-5">Reviews</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Social -->
+            <div class="text-center my-3">
+                <a href="https://www.facebook.com/" class="text-primary  fs-5 me-3 "><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="fs-5 me-3" style="color:#E4405F;"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="text-primary fs-5"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <hr class="border-dark">
+
+            <!-- Bottom -->
+            <div class="text-center py-3">
+                <small>© 2026 JuiceINN. All rights reserved.</small>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const cards1 = document.querySelectorAll(".trend-card");
+
+        cards1.forEach(card => {
+            const video = card.querySelector("video");
+
+            /* DESKTOP - mouse hold */
+            card.addEventListener("mouseover", () => {
+                video.play();
+            });
+
+            card.addEventListener("mouseout", () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+
+
+
+
+            /* MOBILE - touch & hold */
+            card.addEventListener("touchstart", () => {
+                video.play();
+            });
+
+            card.addEventListener("touchend", () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+
+
+        const track = document.querySelector(".testimonial-track");
+        const nextBtn = document.getElementById("nextBtn");
+        const prevBtn = document.getElementById("prevBtn");
+
+        // Get original cards
+        let cards = Array.from(document.querySelectorAll(".testimonial-card"));
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        // Clone first & last card
+        const firstClone = cards[0].cloneNode(true);
+        const lastClone = cards[cards.length - 1].cloneNode(true);
+
+        // Add clones to DOM
+        track.appendChild(firstClone);
+        track.insertBefore(lastClone, cards[0]);
+
+        // Update cards list (with clones)
+        cards = Array.from(track.children);
+
+        // Start from first real card
+        let index = 1;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+        // ▶ NEXT
+        nextBtn.addEventListener("click", () => {
+            index++;
+            track.style.transition = "transform 0.6s ease";
+            track.style.transform = `translateX(-${index * cardWidth}px)`;
+        });
+
+        // ◀ PREV
+        prevBtn.addEventListener("click", () => {
+            index--;
+            track.style.transition = "transform 0.6s ease";
+            track.style.transform = `translateX(-${index * cardWidth}px)`;
+        });
+
+        // 🔄 Invisible reset (magic part)
+        track.addEventListener("transitionend", () => {
+            if (cards[index] === firstClone) {
+                track.style.transition = "none";
+                index = 1;
+                track.style.transform = `translateX(-${index * cardWidth}px)`;
+            }
+
+            if (cards[index] === lastClone) {
+                track.style.transition = "none";
+                index = cards.length - 2;
+                track.style.transform = `translateX(-${index * cardWidth}px)`;
+            }
+        });
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

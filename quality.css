@@ -1,0 +1,164 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    padding-top: 12vh;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    height: 12vh;
+    background-color: rgb(126, 209, 236);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    font-size: larger;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+    width: auto;
+}
+
+.nav-item a:hover {
+    color: blue;
+    transform: translatey(-5px);
+    background-color: rgb(119, 196, 227);
+    border-radius: 20px;
+}
+
+
+/* HERO */
+.quality-hero {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    padding: 60px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+/* CARDS */
+.quality-card {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.quality-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON */
+.icon {
+    font-size: 40px;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+/* STORY */
+.story {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* CERTIFICATES */
+
+.cert-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.cert-box:hover {
+    transform: scale(1.03);
+}
+
+.cert-img {
+    height: 120px;
+    object-fit: contain;
+}
+
+/* GALLERY */
+
+.gallery {
+    width: 400px;
+    height: 320px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.gallery:hover {
+    transform: translateY(-5px);
+}
+
+/* TIMELINE */
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline li {
+    background: #f1faff;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.time {
+    font-weight: bold;
+    color: #0099ff;
+    margin-right: 10px;
+}
+
+/* FAQ box */
+.faq-container {
+    max-width: 900px;
+}
+
+/* Accordion style */
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(126, 209, 236);
+    color: white;
+}
+
+/* Contact button */
+.ask-btn {
+    background-color: rgb(126, 209, 236);
+    color: white;
+    border-radius: 25px;
+    padding: 8px 22px;
+}
+
+.ask-btn:hover {
+    background-color: rgb(86, 189, 230);
+}
+
+
+.container-fluid {
+    background-color: rgb(126, 209, 236);
+}
+
+footer p,
+footer li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}

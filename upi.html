@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JucieInn-UPI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="upi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo1.png" height="80px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#juiceOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="juiceOffcanvas">
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto fw-bold">
+
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">OFFERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="special.html">SPECIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewcart.html">VIEW CART</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+                    </ul>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container upi-box">
+
+        <h2 class="text-center fw-bold mb-3">UPI Payment</h2>
+
+        <div class="card p-4 shadow-sm">
+
+            <div class="text-center mb-3">
+                <i class="fa-solid fa-mobile-screen fs-1 text-primary"></i>
+            </div>
+
+            <label class="form-label">Enter UPI ID</label>
+            <input id="upiid" class="form-control mb-3" placeholder="example@upi">
+
+            <div class="d-flex justify-content-between mb-3">
+                <span>Amount</span>
+                <span class="fw-bold">₹360</span>
+            </div>
+
+            <button class="btn pay-btn w-100" onclick="openOTP()">
+                Pay ₹300
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- OTP BOX -->
+    <div id="otpBox" class="otp-box">
+
+        <h5>OTP Sent</h5>
+
+        <input id="otp" class="form-control mb-2 text-center" placeholder="_ _ _ _">
+
+        <button class="btn btn-success w-100" onclick="verifyOTP()">
+            Verify & Pay
+        </button>
+
+    </div>
+
+
+    <!-- PROCESS -->
+    <div id="process" class="process-box">
+        Redirecting to Gpay......
+    </div>
+
+    <!--Script-->
+    <script>
+        function openOTP() {
+
+            let id = document.getElementById("upiid").value;
+
+            if (id === "") {
+                alert("Enter UPI ID");
+                return;
+            }
+
+            document.getElementById("otpBox").style.display = "block";
+        }
+
+        function verifyOTP() {
+
+            let otp = document.getElementById("otp").value;
+
+            if (otp === "1234") {
+
+                document.getElementById("otpBox").style.display = "none";
+
+                const processBox = document.getElementById("process");
+                processBox.style.display = "block";
+
+                setTimeout(() => {
+                    window.location.href = "success.html";
+                }, 1500); 
+
+            } else {
+                alert("Wrong OTP");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
