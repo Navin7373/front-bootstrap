@@ -89,7 +89,7 @@
 
                     <div class="d-flex justify-content-between">
                         <span>Items Total</span>
-                        <span class="itotal">310</span>
+                        <span class="itotal">0</span>
                     </div>
 
                     <div class="d-flex justify-content-between">
@@ -133,6 +133,11 @@
         let itotal = document.getElementsByClassName("itotal")[0];
         let delivery = document.getElementsByClassName("delivery")[0];
         let total = document.getElementsByClassName("total")[0];
+
+        // Load cart from localStorage and calculate items total
+        let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        let itemsTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        itotal.innerText = itemsTotal;
 
         function updateTotal() {
             let itemsAmount = Number(itotal.innerText);
