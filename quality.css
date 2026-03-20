@@ -95,6 +95,18 @@ body {
     transform: translateY(-5px);
 }
 
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .quality-hero {
+        padding: 30px 14px;
+    }
+
+    .gallery {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
 /* TIMELINE */
 
 .timeline {

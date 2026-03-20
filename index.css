@@ -378,6 +378,19 @@ h2 {
     margin-bottom: 20px;
   }
 
+  /* Prevent fixed card image sizes from overflowing on mobile */
+  .card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
+  /* Slider cards need to fit small screens */
+  .testimonial-card {
+    min-width: min(320px, 88vw);
+  }
+
   footer {
     text-align: center;
   }

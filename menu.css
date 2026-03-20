@@ -162,6 +162,22 @@ img {
   height: auto;
 }
 
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  /* Sidebar becomes a normal block; main content goes full width.
+     (Most of the heavy lifting is in responsive.css; this keeps menu assets sized nicely.) */
+  .main-content img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 320px;
+    object-fit: contain;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+}
+
 /* Headings */
 h1,
 h2 {

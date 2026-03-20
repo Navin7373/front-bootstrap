@@ -1,0 +1,107 @@
+/* Global responsive overrides (applies to all pages)
+   Keep this file included AFTER each page's own CSS so it can override fixed sizes.
+*/
+
+/* Prevent horizontal scroll caused by fixed widths/margins */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms/inputs on mobile should not overflow */
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+/* Reduce hard-coded vh navbar patterns on small screens */
+@media (max-width: 768px) {
+  body {
+    /* Many pages use padding-top: 12vh; on mobile this can be huge and inconsistent */
+    padding-top: 88px !important;
+  }
+
+  .navbar {
+    height: auto !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .navbar-brand img {
+    max-height: 56px !important;
+  }
+
+  /* Fixed-width auth cards */
+  .login-card,
+  .signup-card {
+    width: min(420px, 92vw) !important;
+  }
+
+  /* MENU page: collapse the fixed sidebar into a normal flow block */
+  .layout {
+    flex-direction: column;
+  }
+
+  .menu1 {
+    position: relative !important;
+    top: 0 !important;
+    bottom: auto !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border-radius: 16px;
+    margin: 12px 12px 0 12px;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 16px !important;
+  }
+
+  /* Specials / Offers: remove large desktop padding/margins */
+  .specials-wrapper {
+    padding: 16px !important;
+  }
+
+  .container1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 16px !important;
+  }
+
+  /* Quality page gallery fixed size */
+  .gallery {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* UPI modal boxes: ensure they fit smaller screens */
+  .otp-box,
+  .process-box {
+    width: min(320px, 92vw) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 80px !important;
+  }
+
+  /* Buttons with fixed width (special/menu/offers) */
+  .add-btn {
+    width: min(220px, 92vw) !important;
+  }
+}
+
+
